@@ -69,7 +69,7 @@ console.log("print left aligned upside down right triangle with row numbers");
 console.log("--------------------------------");
 
 
-function printLeftAlignedUpsideDownRightTriangleWithRowNumbers(num) {
+function printLeftAlignedInvertedRightTriangleWithRowNumbers(num) {
   for (var i = 0; i < num; i++) {
     var row = "";
     for (var j = 0; j < num-i; j++) {
@@ -79,4 +79,20 @@ function printLeftAlignedUpsideDownRightTriangleWithRowNumbers(num) {
   }
 }
 
-printLeftAlignedUpsideDownRightTriangleWithRowNumbers(5);
+printLeftAlignedInvertedRightTriangleWithRowNumbers(5);
+
+
+function printLeftAlignedInvertedRightTriangle(num) {
+  for (var i = 0; i < num; i++) {
+    var row = "";
+    for (var j = 0; j < num - i; j++) {
+      row = row + " " + ("*");
+    }
+    console.log(row);
+  }
+}
+
+console.log("--------------------------------");
+console.log("print left aligned upside down right triangle");
+console.log("--------------------------------");
+printLeftAlignedInvertedRightTriangle(5);
