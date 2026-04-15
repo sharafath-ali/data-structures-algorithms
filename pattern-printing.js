@@ -14,9 +14,9 @@ function printLeftAlignedRightTriangle(num) {
 printLeftAlignedRightTriangle(7)
 
 
-console.log("print sqaure")
+console.log("print square")
 
-function printsqaure(num){
+function printSquare(num){
   for (var i = 1; i <= num; i++) {
     var row = "";
     for (var j = 1; j <= num; j++) {
@@ -26,4 +26,4 @@ function printsqaure(num){
   }
 }
 
-printsqaure(4)
+printSquare(4)
