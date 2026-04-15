@@ -96,3 +96,22 @@ console.log("--------------------------------");
 console.log("print left aligned upside down right triangle");
 console.log("--------------------------------");
 printLeftAlignedInvertedRightTriangle(5);
+
+function printrightAlignedInvertedRightTriangle(num) {
+  for (var i = 0; i < num; i++) {
+    var row = "";
+    for (var j = 0; j <= num; j++) {
+      if (j < num - i) {
+        row = row + " ";
+      } else {
+        row = row + "*";
+      }
+    }
+    console.log(row);
+  }
+}
+
+console.log("--------------------------------");
+console.log("print right aligned upside down right triangle");
+console.log("--------------------------------");
+printrightAlignedInvertedRightTriangle(6);
