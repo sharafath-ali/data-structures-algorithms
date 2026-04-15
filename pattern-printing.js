@@ -63,3 +63,20 @@ function printLeftAlignedRightTriangleWithColumnNumbers(num) {
 }
 
 printLeftAlignedRightTriangleWithColumnNumbers(5);
+
+console.log("--------------------------------");
+console.log("print left aligned upside down right triangle with row numbers");
+console.log("--------------------------------");
+
+
+function printLeftAlignedUpsideDownRightTriangleWithRowNumbers(num) {
+  for (var i = 0; i < num; i++) {
+    var row = "";
+    for (var j = 0; j < num-i; j++) {
+      row = row + " " + (j+1);
+    }
+    console.log(row);
+  }
+}
+
+printLeftAlignedUpsideDownRightTriangleWithRowNumbers(5);
