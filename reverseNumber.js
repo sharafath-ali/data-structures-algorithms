@@ -17,6 +17,6 @@ function reverseNumber(num) {
 }
 
 // Example usage
-console.log(reverseNumber(-123)); // 321
+console.log(reverseNumber(-123)); // -321
 console.log(reverseNumber(121)); // 121
 console.log(reverseNumber(100)); // 1
