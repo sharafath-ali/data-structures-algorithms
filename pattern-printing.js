@@ -137,3 +137,26 @@ console.log("--------------------------------");
 console.log("print number pattern");
 console.log("--------------------------------");
 printnumberpattern(6);
+
+
+function printnumberpattern2(num) {
+  var toggle = 1;
+  for (var i = 0; i < num; i++) {
+    var row = "";
+    for (var j = 0; j <= i; j++) {
+      if (toggle == 1) {
+        row = row + " " + "1";
+        toggle = 0;
+      } else {
+        row = row + " " + "0";
+        toggle = 1;
+      }
+    }
+    console.log(row);
+  }
+}
+
+console.log("--------------------------------");
+console.log("print number pattern");
+console.log("--------------------------------");
+printnumberpattern2(6);
