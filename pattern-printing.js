@@ -1,7 +1,7 @@
 // pattern-printing.js
 // Example pattern printing functions in JavaScript
 
-function printRightAngledTriangle(num) {
+function printLeftAlignedRightTriangle(num) {
   for (var i = 1; i <= num; i++) {
     var row = "";
     for (var j = 1; j <= i; j++) {
@@ -11,4 +11,5 @@ function printRightAngledTriangle(num) {
   }
 }
 
-printRightAngledTriangle(7)
+printLeftAlignedRightTriangle(7)
+
