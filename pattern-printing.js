@@ -33,34 +33,33 @@ printSquare(4)
 
 
 console.log("--------------------------------")
-console.log("print left aligned right triangle with numbers")
-console.log("--------------------------------")
-
-function printLeftAlignedRightTriangleWithNumbers(num) {
-  for (var i = 1; i <= num; i++) {
-    var row = "";
-    for (var j = 1; j <= i; j++) {
-      row = row + " " + j
-    }
-    console.log(row)
-  }
-}
-
-printLeftAlignedRightTriangleWithNumbers(5)
-
-
-console.log("--------------------------------")
 console.log("print left aligned right triangle with row numbers")
 console.log("--------------------------------")
 
-function printLeftAlignedRightTriangle2WithNumbers(num) {
+function printLeftAlignedRightTriangleWithRowNumbers(num) {
   for (var i = 1; i <= num; i++) {
     var row = "";
     for (var j = 1; j <= i; j++) {
-      row = row + " " + i
+      row = row + " " + j;
     }
-    console.log(row)
+    console.log(row);
   }
 }
 
-printLeftAlignedRightTriangle2WithNumbers(5)
+printLeftAlignedRightTriangleWithRowNumbers(5);
+
+console.log("--------------------------------");
+console.log("print left aligned right triangle with column numbers");
+console.log("--------------------------------");
+
+function printLeftAlignedRightTriangleWithColumnNumbers(num) {
+  for (var i = 1; i <= num; i++) {
+    var row = "";
+    for (var j = 1; j <= i; j++) {
+      row = row + " " + i;
+    }
+    console.log(row);
+  }
+}
+
+printLeftAlignedRightTriangleWithColumnNumbers(5);
