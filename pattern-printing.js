@@ -30,3 +30,20 @@ function printSquare(num){
 }
 
 printSquare(4)
+
+
+console.log("--------------------------------")
+console.log("print left aligned right triangle with numbers")
+console.log("--------------------------------")
+
+function printLeftAlignedRightTrianglenumber(num) {
+  for (var i = 1; i <= num; i++) {
+    var row = "";
+    for (var j = 1; j <= i; j++) {
+      row = row + " " + j
+    }
+    console.log(row)
+  }
+}
+
+printLeftAlignedRightTrianglenumber(5)
